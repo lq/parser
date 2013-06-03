@@ -245,7 +245,7 @@ static int	xxungetc(int);
    string.  Needs wide-char support.
 */
 #if defined(SUPPORT_MBCS)
-# include <R_ext/rlocale.h>
+# include <rlocale.h>
 #ifdef HAVE_LANGINFO_CODESET
 # include <langinfo.h>
 #endif

@@ -1,4 +1,8 @@
+#' @importFrom utils data
+#' @import Rcpp 
+#' @useDynLib parser
 .onLoad <- function( libname, pkgname ){
-	loadRcppModules( direct = TRUE  )
+    # loadRcppModules()
+	loadModule("parser_module", T)
 }
 

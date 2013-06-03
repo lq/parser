@@ -179,7 +179,7 @@ static void setId( SEXP expr, yyltype loc){
 #define LBRACE	'{'
 #define RBRACE	'}'
 
-#define YYDEBUG 1
+// #define YYDEBUG 1
 
 static int colon ;
 
@@ -3289,7 +3289,7 @@ static void growID( int target ){
  *
  * Calls the Highlight_ParseFile function from gram.y -> gram.c
  */
-SEXP attribute_hidden do_parser(SEXP args){
+SEXP attribute_visible do_parser(SEXP args){
 	
 	/*{{{ declarations */
 	SEXP result ;
